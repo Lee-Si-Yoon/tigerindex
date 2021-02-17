@@ -1,0 +1,536 @@
+main .constellation__container{
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#myChart{
+    width: 1000px;
+    height: 600px;
+}
+/*
+.constellation{
+    height: max-content;
+    height: 431px;
+    width: 725px;
+    position: relative;
+}
+
+.dot_price1 #dot1{
+    position: absolute;
+    top: 397px;
+    left: 229px;
+    width: 29px;
+    height: 34px;
+}
+.dot_price1:hover::after, .dot_price1:active::after{
+    content: attr(data-price);
+    position: absolute;
+    width: 100px;
+    width: max-content;
+    height: 100px;
+    padding: .5rem;
+    color: #BC2FC8;
+    font-size: 1.2rem;
+    top: 397px;
+    left: 229px;
+    transform : translateX(-105%);
+}
+
+.dot_price2 #dot1{
+    position: absolute;
+    top: 311px;
+    left: 421px;
+    width: 28px;
+    height: 25px;
+}
+.dot_price2:hover::after, .dot_price2:active::after{
+    content: attr(data-price);
+    position: absolute;
+    width: 100px;
+    width: max-content;
+    height: 100px;
+    padding: .5rem;
+    color: #BC2FC8;
+    font-size: 1.2rem;
+    top: 311px;
+    left: 421px;
+    transform : translateX(30%) translateY(-5%);
+}
+
+.dot_price3 #dot1{
+    position: absolute;
+    top: 166px;
+    left: 411px;
+    width: 24px;
+    height: 24px;
+}
+.dot_price3:hover::after, .dot_price3:active::after{
+    content: attr(data-price);
+    position: absolute;
+    width: 100px;
+    width: max-content;
+    height: 100px;
+    padding: .5rem;
+    color: #BC2FC8;
+    font-size: 1.2rem;
+    top: 166px;
+    left: 411px;
+    transform : translateX(-105%) translateY(-5%);
+}
+
+.dot_price4 #dot1{
+    position: absolute;
+    top: 98px;
+    left: 569px;
+    width: 26px;
+    height: 20px;
+}
+.dot_price4:hover::after, .dot_price4:active::after{
+    content: attr(data-price);
+    position: absolute;
+    width: 100px;
+    width: max-content;
+    height: 100px;
+    padding: .5rem;
+    color: #BC2FC8;
+    font-size: 1.2rem;
+    top: 98px;
+    left: 569px;
+    transform : translateX(30%) translateY(-7%);
+}
+
+.dot_price5 #dot1{
+    position: absolute;
+    top: 215px;
+    left: 695px;
+    width: 30px;
+    height: 26px;
+}
+.dot_price5:hover::after, .dot_price5:active::after{
+    content: attr(data-price);
+    position: absolute;
+    width: 100px;
+    width: max-content;
+    height: 100px;
+    padding: .5rem;
+    color: #BC2FC8;
+    font-size: 1.2rem;
+    top: 215px;
+    left: 695px;
+    transform : translateX(30%) translateY(-5%);
+}
+
+.dot_price6 #dot1{
+    position: absolute;
+    top: 17px;
+    left: 288px;
+    width: 28px;
+    height: 23px;
+}
+.dot_price6:hover::after, .dot_price6:active::after{
+    content: attr(data-price);
+    position: absolute;
+    width: 100px;
+    width: max-content;
+    height: 100px;
+    padding: .5rem;
+    color: #BC2FC8;
+    font-size: 1.2rem;
+    top: 17px;
+    left: 288px;
+    transform : translateX(30%) translateY(-5%);
+}
+
+.dot_price7 #dot1{
+    position: absolute;
+    top: 61px;
+    left: 131px;
+    width: 18px;
+    height: 20px;
+}
+.dot_price7:hover::after, .dot_price7:active::after{
+    content: attr(data-price);
+    position: absolute;
+    width: 100px;
+    width: max-content;
+    height: 100px;
+    padding: .5rem;
+    color: #BC2FC8;
+    font-size: 1.2rem;
+    top: 61px;
+    left: 131px;
+    transform : translateX(-100%) translateY(-5%);
+}
+
+.dot_price8 #dot1{
+    position: absolute;
+    top: 0px;
+    left: 140px;
+    width: 19px;
+    height: 18px;
+}
+.dot_price8:hover::after, .dot_price8:active::after{
+    content: attr(data-price);
+    position: absolute;
+    width: 100px;
+    width: max-content;
+    height: 100px;
+    padding: .5rem;
+    color: #BC2FC8;
+    font-size: 1.2rem;
+    top: 0px;
+    left: 140px;
+    transform : translateX(20%) translateY(-5%);
+}
+
+.dot_price9 #dot1{
+    position: absolute;
+    top: 58px;
+    left: 0px;
+    width: 27px;
+    height: 26px;
+}
+.dot_price9:hover::after, .dot_price9:active::after{
+    content: attr(data-price);
+    position: absolute;
+    width: 100px;
+    width: max-content;
+    height: 100px;
+    padding: .5rem;
+    color: #BC2FC8;
+    font-size: 1.2rem;
+    top: 58px;
+    left: 0px;
+    transform : translateX(-100%) translateY(-5%);
+}
+
+.lines{
+    position: absolute;
+    left: 40px;
+    top: 16px;
+}
+#line1:nth-child(1){
+    position: absolute;
+    top: 316px;
+    left: 231px;
+    width: 146px;
+    height: 76px;
+}
+#line1:nth-child(2){
+    position: absolute;
+    top: 190px;
+    left: 383px;
+    width: 20px;
+    height: 70px;
+}
+#line1:nth-child(3){
+    position: absolute;
+    top: 92px;
+    left: 420px;
+    width: 93px;
+    height: 54px;
+}
+#line1:nth-child(4){
+    position: absolute;
+    top: 110px;
+    left: 578px;
+    width: 62px;
+    height: 80px;
+}
+#line1:nth-child(5){
+    position: absolute;
+    top: 32px;
+    left: 287px;
+    width: 74px;
+    height: 97px;
+}
+#line1:nth-child(6){
+    position: absolute;
+    top: 1px;
+    left: 113px;
+    width: 133px;
+    height: 54px;
+}
+#line1:nth-child(7){
+    position: absolute;
+    top: 10px;
+    left: 90px;
+    width: 12px;
+    height: 36px;
+}
+#line1:nth-child(8){
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 83px;
+    height: 40px;
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 3) {
+    main .constellation__container{
+        margin-top: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }    
+    .constellation{
+        display: flex;
+        height: max-content;
+        height: 225px;
+        width: 370px;
+        position: relative;
+    }
+
+    .dot_price1 #dot1{
+        position: absolute;
+        top: 193px;
+        left: 109px;
+        width: 28px;
+        height: 32px;
+    }
+    .dot_price1:hover::after, .dot_price1:active::after{
+        content: attr(data-price);
+        position: absolute;
+        width: 100px;
+        width: max-content;
+        height: 100px;
+        padding: .5rem;
+        color: #BC2FC8;
+        font-size: 1.2rem;
+        top: 193px;
+        left: 109px;
+        transform : translateX(-100%);
+    }
+    
+    .dot_price2 #dot1{
+        position: absolute;
+        top: 151px;
+        left: 221px;
+        width: 26px;
+        height: 23px;
+    }
+    .dot_price2:hover::after, .dot_price2:active::after{
+        content: attr(data-price);
+        position: absolute;
+        width: 100px;
+        width: max-content;
+        height: 100px;
+        padding: .5rem;
+        color: #BC2FC8;
+        font-size: 1.2rem;
+        top: 151px;
+        left: 221px;
+        transform : translateX(25%) translateY(-5%);
+    }
+    
+    .dot_price3 #dot1{
+        position: absolute;
+        top: 74px;
+        left: 198px;
+        width: 29px;
+        height: 29px;
+    }
+    .dot_price3:hover::after, .dot_price3:active::after{
+        content: attr(data-price);
+        position: absolute;
+        width: 100px;
+        width: max-content;
+        height: 100px;
+        padding: .5rem;
+        color: #BC2FC8;
+        font-size: 1.2rem;
+        top: 74px;
+        left: 198px;
+        transform : translateX(-100%) translateY(-5%);
+    }
+    
+    .dot_price4 #dot1{
+        position: absolute;
+        top: 42px;
+        left: 278px;
+        width: 29px;
+        height: 23px;
+    }
+    .dot_price4:hover::after, .dot_price4:active::after{
+        content: attr(data-price);
+        position: absolute;
+        width: 100px;
+        width: max-content;
+        height: 100px;
+        padding: .5rem;
+        color: #BC2FC8;
+        font-size: 1.2rem;
+        top: 42px;
+        left: 278px;
+        transform : translateX(-35%) translateY(-30%);
+    }
+    
+    .dot_price5 #dot1{
+        position: absolute;
+        top: 104px;
+        left: 341px;
+        width: 29px;
+        height: 25px;
+    }
+    .dot_price5:hover::after, .dot_price5:active::after{
+        content: attr(data-price);
+        position: absolute;
+        width: 100px;
+        width: max-content;
+        height: 100px;
+        padding: .5rem;
+        color: #BC2FC8;
+        font-size: 1.2rem;
+        top: 104px;
+        left: 341px;
+        transform : translateX(-100%) translateY(-5%);
+    }
+    
+    .dot_price6 #dot1{
+        position: absolute;
+        top: 8px;
+        left: 147px;
+        width: 22px;
+        height: 19px;
+    }
+    .dot_price6:hover::after, .dot_price6:active::after{
+        content: attr(data-price);
+        position: absolute;
+        width: 100px;
+        width: max-content;
+        height: 100px;
+        padding: .5rem;
+        color: #BC2FC8;
+        font-size: 1.2rem;
+        top: 8px;
+        left: 147px;
+        transform : translateX(20%) translateY(-10%);
+    }
+    
+    .dot_price7 #dot1{
+        position: absolute;
+        top: 34px;
+        left: 67px;
+        width: 18px;
+        height: 20px;
+    }
+    .dot_price7:hover::after, .dot_price7:active::after{
+        content: attr(data-price);
+        position: absolute;
+        width: 100px;
+        width: max-content;
+        height: 100px;
+        padding: .5rem;
+        color: #BC2FC8;
+        font-size: 1.2rem;
+        top: 34px;
+        left: 67px;
+        transform : translateX(-40%) translateY(15%);
+    }
+    
+    .dot_price8 #dot1{
+        position: absolute;
+        top: 0px;
+        left: 69px;
+        width: 17px;
+        height: 16px;
+    }
+    .dot_price8:hover::after, .dot_price8:active::after{
+        content: attr(data-price);
+        position: absolute;
+        width: 100px;
+        width: max-content;
+        height: 100px;
+        padding: .5rem;
+        color: #BC2FC8;
+        font-size: 1.2rem;
+        top: 0px;
+        left: 69px;
+        transform : translateX(-40%) translateY(-30%);
+    }
+    
+    .dot_price9 #dot1{
+        position: absolute;
+        top: 31px;
+        left: 0px;
+        width: 20px;
+        height: 20px;
+    }
+    .dot_price9:hover::after, .dot_price9:active::after{
+        content: attr(data-price);
+        position: absolute;
+        width: 100px;
+        width: max-content;
+        height: 100px;
+        padding: .5rem;
+        color: #BC2FC8;
+        font-size: 1.2rem;
+        top: 31px;
+        left: 0px;
+        transform : translateX(0%) translateY(20%);
+    }
+    
+    .lines{
+        position: absolute;
+        left: 22px;
+        top: 10px;
+    }
+    #line1:nth-child(1){
+        position: absolute;
+        top: 156px;
+        left: 113px;
+        width: 76px;
+        height: 39px;
+    }
+    #line1:nth-child(2){
+        position: absolute;
+        top: 93px;
+        left: 191px;
+        width: 13px;
+        height: 44px;
+    }
+    #line1:nth-child(3){
+        position: absolute;
+        top: 45px;
+        left: 208px;
+        width: 46px;
+        height: 27px;
+    }
+    #line1:nth-child(4){
+        position: absolute;
+        top: 51px;
+        left: 288px;
+        width: 30px;
+        height: 39px;
+    }
+    #line1:nth-child(5){
+        position: absolute;
+        top: 18px;
+        left: 144px;
+        width: 35px;
+        height: 45px;
+    }
+    #line1:nth-child(6){
+        position: absolute;
+        top: 2px;
+        left: 61px;
+        width: 61px;
+        height: 25px;
+    }
+    #line1:nth-child(7){
+        position: absolute;
+        top: 6px;
+        left: 47px;
+        width: 6px;
+        height: 18px;
+    }
+    #line1:nth-child(8){
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 45px;
+        height: 22px;
+    }
+}
+*/

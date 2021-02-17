@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv='refresh' content='30';>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="{{url_for('static', filename='icons/tiger.png') }}"
+    />
+    <title>Tiger index | yang-a-chi</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='styles/style.css') }}"
+    />
+    <script src="{{url_for('static', filename='clock.js') }}" defer></script>
+    <script src="{{url_for('static', filename='profit.js') }}" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <img
+        src="{{url_for('static', filename='icons/tiger.png')}}"
+        alt="tiger logo"
+        class="tiger__logo"
+      />
+      <img
+        src="{{url_for('static', filename='icons/tiger_index.png') }}"
+        alt="tiger index"
+        class="tiger__index"
+      />
+    </header>
+
+    <main>
+      <div class="constellation__container">
+        <canvas id="myChart" width="900" height="500"></canvas>
+      </div>
+      <div class="clock__container">
+        <span id="clock" class="clock">Feb 18th, 2021</span>
+      </div>
+      <div class="status__container">
+        <div class="status__plus status__plate">
+          <img
+            src="{{url_for('static', filename='icons/status_plus.png')}}"
+            alt="status__plus"
+          />
+          <span class="status__profit">{{summed}}</span>
+        </div>
+        <div class="status__minus status__plate">
+          <img
+            src="{{url_for('static', filename='icons/status_minus.png')}}"
+            alt="status__minus"
+          />
+          <span class="status__profit">{{summed}}</span>
+        </div>
+      </div>
+    </main>
+    {% for data in datas %}
+    <div>
+      <p
+        id="dataSet"
+        data-company="{{data.company}}"
+        data-price="{{data.price}}"
+      ></p>
+    </div>
+    {% endfor %}
+
+    <script>
+      chartIt();
+      async function chartIt() {
+        const data = await getData();
+        const ctx = document.getElementById("myChart").getContext("2d");
+        const myChart = new Chart(ctx, {
+          type: "line",
+          data: {
+            labels: data.names,
+            datasets: [
+              {
+                label: "price",
+                data: data.prices,
+                borderColor: "#D3EFD4",
+                borderWidth: 10,
+                fill: false,
+                pointHitRadius: 0.1,
+                pointBackgroundColor: "#BC2FC8",
+                pointRadius: 15,
+                pointBorderWidth: 0,
+              },
+            ],
+          },
+          options: {
+            layout: {
+              padding: {
+                left: 50,
+                right: 50,
+                top: 50,
+                bottom: 50
+              },
+            },
+            legend: {
+              display: false,
+            },
+            animation: {
+              duration: 1,
+              onComplete: function () {
+                var chartInstance = this.chart,
+                  ctx = chartInstance.ctx;
+                ctx.font = "12px courier";
+                ctx.fillStyle = "#BC2FC8";
+                ctx.textAlign = "center";
+                ctx.textBaseline = "bottom";
+
+                this.data.datasets.forEach(function (dataset, i) {
+                  var meta = chartInstance.controller.getDatasetMeta(i);
+                  meta.data.forEach(function (bar, index) {
+                    var data = dataset.data[index];
+                    ctx.fillText(data, bar._model.x, bar._model.y + 35);
+                  });
+                });
+              },
+            },
+            responsive: false,
+            tooltips: {
+              intersect: true
+            },
+            scales: {
+              xAxes: [
+                {
+                  ticks: {
+                    display: false,
+                  },
+                  gridLines: {
+                    display: false,
+                  },
+                },
+              ],
+              yAxes: [
+                {
+                  ticks: {
+                    display: false,
+                  },
+                  gridLines: {
+                    display: false,
+                  },
+                },
+              ],
+            },
+          },
+        });
+      }
+      async function getData() {
+        const names = [];
+        const prices = [];
+        const dataSet = document.querySelectorAll("#dataSet");
+        dataSet.forEach((data) => {
+          numberedPrice = Number(data.dataset.price);
+          names.push(data.dataset.company);
+          prices.push(numberedPrice);
+        });
+        return { names, prices };
+      }
+    </script>
+  </body>
+</html>

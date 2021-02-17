@@ -1,0 +1,29 @@
+main .clock__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+main .clock__container span{
+    color: #D25BBD;
+    text-shadow: 0 0 1px #D25BBD;
+    font-size: 36px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 3) {
+    main .clock__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10%;
+    }
+    main .clock__container span{
+        color: #D25BBD;
+        text-shadow: 0 0 1px #D25BBD;
+        font-size: 2rem;
+        font-weight: 500;
+        opacity: 0.8;
+    }
+}
