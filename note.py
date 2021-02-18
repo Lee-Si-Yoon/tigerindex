@@ -6,10 +6,10 @@ from bs4 import BeautifulSoup
 
 # authentic
 API_KEY = '28d8e6e184a9c2e328bce1d0c20fbeff'
-STOCK_CODE = ['AAPL','LAZR','NVDA','VLDR','TSLA','U']
+#STOCK_CODE = ['AAPL','LAZR','NVDA','VLDR','TSLA','U']
 # demo
 #API_KEY = 'demo'
-#STOCK_CODE = ['AAPL','AAPL','AAPL','AAPL','AAPL','AAPL']
+STOCK_CODE = ['AAPL','AAPL','AAPL','AAPL','AAPL','AAPL']
 
 API_URL = 'https://financialmodelingprep.com/api/v3/profile'
 
