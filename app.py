@@ -1,5 +1,6 @@
-import requests
-from bs4 import BeautifulSoup
+#import requests
+#from bs4 import BeautifulSoup
+import time
 from flask import Flask, render_template, request, jsonify
 from note import init
 
