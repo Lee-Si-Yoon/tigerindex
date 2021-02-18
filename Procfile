@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0:$PORT app:app
+gunicorn run:app -b localhost:8000
