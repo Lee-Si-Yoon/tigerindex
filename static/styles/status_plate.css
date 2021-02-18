@@ -5,7 +5,8 @@ main .status__container{
     align-items: center;
 }
 main .status__plate{
-    width: 1000px;
+    /*width: 1000px;*/
+    width: 95%;
     position: relative;
 }
 main .status__plate img{
@@ -16,13 +17,13 @@ main .status__plate span{
     transform: translate(-50%,-50%);
     top: 50%;
     left: 51%;
-    font-size: 50px;
+    font-size: 2.5rem;
     color: #BC2FC8;
     font-weight: 600;
     opacity: 0.7;
     text-shadow: 0 0 1px #BC2FC8;
 }
-
+/*
 @media only screen and (min-device-width: 300px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 3) {
     main .status__container{
         margin-top: 5%;
@@ -49,3 +50,4 @@ main .status__plate span{
         text-shadow: 0 0 1px #BC2FC8;
     }
 }
+*/

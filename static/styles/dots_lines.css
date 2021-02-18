@@ -5,8 +5,8 @@ main .constellation__container{
     justify-content: center;
 }
 #myChart{
-    width: 1000px;
-    height: 600px;
+    width: 90%;
+    height: 40%;
 }
 /*
 .constellation{
