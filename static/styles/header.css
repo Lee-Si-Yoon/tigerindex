@@ -13,7 +13,7 @@ header .tiger__logo{
 
 @media screen and (max-device-width: 999px) {
     header .tiger__index{
-        margin-top: 1.5%;
+        margin-top: 3.5%;
         font-size: 1.5rem;
         color: #BC2FC8;
         font-weight: 600;
