@@ -1,8 +1,7 @@
 const profitText = document.querySelectorAll('.status__profit');
 const profitPlus = document.querySelector('.status__plus'),
         plusText = profitPlus.querySelector('.status__profit');
-const profitMinus = document.querySelector('.status__minus'),
-        minusText = profitMinus.querySelector('.status__profit');
+const profitMinus = document.querySelector('.status__minus');
 
 profitText.forEach(e => {
     const parsedProfit = Number(e.innerText);
