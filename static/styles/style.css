@@ -15,3 +15,27 @@ body {
     width: 100vw;
   }
 
+.news{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.news p, .news h3{
+  color: #D25BBD;
+}
+.news h3{
+  font-weight: 500;
+  font-size: 1rem;
+}
+.news p{
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+.news img{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  height: 50%;
+}
