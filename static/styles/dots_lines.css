@@ -1,17 +1,17 @@
 main .constellation__container{
-    margin-top: 0;
+    margin-top: 1%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#myChart{
-    margin-top: 1%;
-    width: 90%;
-    height: 30%;
+@media screen and (max-device-width: 999px) {
+    #myChart{
+        width: 90%;
+        height: 30%;
+    }
 }
 @media screen and (min-device-width: 1000px) {
     #myChart{
-        margin-top: 1%;
         width: 900px;
         height: 30%;
     }

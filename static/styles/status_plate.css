@@ -4,10 +4,19 @@ main .status__container{
     flex-direction: column;
     align-items: center;
 }
-main .status__plate{
-    /*width: 1000px;*/
-    width: 95%;
-    position: relative;
+@media screen and (min-device-width: 1000px) {
+    main .status__plate{
+        /*width: 1000px;*/
+        width: 1000px;
+        position: relative;
+    }
+}
+@media screen and (max-device-width: 999px) {
+    main .status__plate{
+        /*width: 1000px;*/
+        width: 95%;
+        position: relative;
+    }
 }
 main .status__plate img{
     width: 100%;
@@ -15,7 +24,7 @@ main .status__plate img{
 main .status__plate span{
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 50%;
+    top: 51%;
     left: 51%;
     font-size: 2.5rem;
     color: #BC2FC8;
@@ -24,13 +33,6 @@ main .status__plate span{
     text-shadow: 0 0 1px #BC2FC8;
 }
 
-@media screen and (min-device-width: 1000px) {
-    main .status__plate{
-        /*width: 1000px;*/
-        width: 1000px;
-        position: relative;
-    }
-}
 /*
 @media only screen and (min-device-width: 300px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 3) {
     main .status__container{
