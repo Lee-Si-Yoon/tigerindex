@@ -1,3 +1,4 @@
+/*
 const profitText = document.querySelectorAll('.status__profit');
 const profitPlus = document.querySelector('.status__plus'),
         plusText = profitPlus.querySelector('.status__profit');
@@ -12,3 +13,4 @@ profitText.forEach(e => {
         plusText.innerHTML = '';
     }
 });
+*/
