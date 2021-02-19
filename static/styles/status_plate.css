@@ -23,6 +23,7 @@ main .status__plate span{
     opacity: 0.7;
     text-shadow: 0 0 1px #BC2FC8;
 }
+
 @media only screen and (min-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 3) {
     main .status__plate{
         /*width: 1000px;*/

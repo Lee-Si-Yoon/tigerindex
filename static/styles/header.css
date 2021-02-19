@@ -2,7 +2,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height : 20%;
+    height : 17%;
 }
 header .tiger__logo{
     width: 52px;
@@ -11,25 +11,7 @@ header .tiger__logo{
 }
 header .tiger__index{
     margin-top: 8px;
-    width: 250px;
-    height: 60px;
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 3) {
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height : max-content;
-    }
-    header .tiger__logo{
-        width: 52px;
-        height: 57px;
-        margin-top: 15%;
-    }
-    header .tiger__index{
-        margin-top: 3%;
-        width: 250px;
-        height: 60px;
-    }
+    font-size: 2rem;
+    color: #BC2FC8;
+    font-weight: 600;
 }

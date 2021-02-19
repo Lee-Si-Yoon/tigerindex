@@ -26,11 +26,7 @@
         alt="tiger logo"
         class="tiger__logo"
       />
-      <img
-        src="{{url_for('static', filename='icons/tiger_index.png') }}"
-        alt="tiger index"
-        class="tiger__index"
-      />
+      <h1 class="tiger__index">Tiger Index</h1>
     </header>
 
     <main>
@@ -49,6 +45,18 @@
           <span class="status__profit">{{summed}}</span>
         </div>
       </div>
+      <h3>Tiger Index, 호랑이 지수는 모빌리티 세계를 연결합니다.</h3>
+      <p>#TigerIndex <br />
+          Tiger Index, 호랑이 지수는 Velodyne Lidar, Nvidia, 삼성전자, 현대자동차,<br />
+          Unity Software, Apple, Naver, 현대오토에버, Luminar Technologies를 연결합니다. </p>
+      <p>#TigerIndex #Y͜͡a͜͡n͜͡g͜͡a͜͡c͜͡h͜͡i͜͡</p>
+      <h4>Tiger Index, 호랑이 지수는 Velodyne Lidar는 2.84%, Nvidia는 -4.68%, 삼성전자는<br />
+        -5.75%, 현대자동차는 -9.49%, Unity Software는 -1.08% Apple은 1.03%, Naver는<br />
+        -1.72%, 현대오토에버는 -12.81%, Luminar Technologies는 -4.58% 수익율을 알립니다.</h4>
+      <img src="{{url_for('static', filename='icons/imgs/news1')}}" alt="news" class="news1"/>
+      <img src="{{url_for('static', filename='icons/imgs/news2')}}" alt="news" class="news2"/>
+      <img src="{{url_for('static', filename='icons/imgs/news3')}}" alt="news" class="news3"/>
+      <img src="{{url_for('static', filename='icons/imgs/news4')}}" alt="news" class="news4"/>
     </main>
     {% for data in datas %}
     <div>
@@ -59,7 +67,6 @@
       ></p>
     </div>
     {% endfor %}
-
     <script>
       chartIt();
       async function chartIt() {
