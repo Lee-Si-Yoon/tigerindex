@@ -54,7 +54,7 @@ body {
 }
 @media screen and (min-device-width: 1000px) {
   .news{
-    margin-top: 10%;
+    margin-top: 5%;
     width: 100vw;
     height: auto;
     display: flex;
@@ -63,7 +63,7 @@ body {
     align-items: center;
   }
   .news__container{
-    width: 95%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -84,8 +84,8 @@ body {
     line-height: 130%;
   }
   .news img{
-    margin-top: 8%;
-    margin-bottom: 8%;
+    margin-top: 4%;
+    margin-bottom: 4%;
     width: 100%;
   }
 }

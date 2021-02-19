@@ -1,27 +1,36 @@
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height : 15%;
-    margin-bottom: 10px;
-}
-header .tiger__logo{
-    width: 52px;
-    height: 57px;
-    margin-top: 5%;
-}
-
 @media screen and (max-device-width: 999px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height : 18%;
+        margin-bottom: 10px;
+    }
+    header .tiger__logo{
+        width: 15%;
+        margin-top: 8%;
+    }
     header .tiger__index{
         margin-top: 3.5%;
         font-size: 1.5rem;
         color: #BC2FC8;
-        font-weight: 600;
+        font-weight: 500;
     }
 }
 @media screen and (min-device-width: 1000px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height : 18%;
+        margin-bottom: 10px;
+    }
+    header .tiger__logo{
+        width: 4%;
+        margin-top: 2%;
+    }
     header .tiger__index{
-        margin-top: 12px;
+        margin-top: 20px;
         font-size: 2rem;
         color: #BC2FC8;
         font-weight: 600;
