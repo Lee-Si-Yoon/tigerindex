@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv='refresh' content='43200';>
+    <meta http-equiv='refresh' content='86400';>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--<link
@@ -48,13 +48,6 @@
           />
           <span class="status__profit">{{summed}}</span>
         </div>
-        <div class="status__minus status__plate">
-          <img
-            src="{{url_for('static', filename='icons/status_minus.png')}}"
-            alt="status__minus"
-          />
-          <span class="status__profit">{{summed}}</span>
-        </div>
       </div>
     </main>
     {% for data in datas %}
@@ -85,8 +78,9 @@
                 fill: false,
                 pointHitRadius: 0.1,
                 pointBackgroundColor: "#BC2FC8",
-                pointRadius: 15,
+                pointRadius: 7.5,
                 pointBorderWidth: 0,
+                lineTension: 0
               },
             ],
           },

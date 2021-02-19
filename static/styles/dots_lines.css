@@ -6,7 +6,13 @@ main .constellation__container{
 }
 #myChart{
     width: 90%;
-    height: 40%;
+    height: 30%;
+}
+@media only screen and (min-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 3) {
+    #myChart{
+        width: 900px;
+        height: 30%;
+    }
 }
 /*
 .constellation{

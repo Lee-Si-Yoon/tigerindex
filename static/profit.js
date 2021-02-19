@@ -10,6 +10,6 @@ profitText.forEach(e => {
         plusText.innerHTML = '';
     }
     if(parsedProfit > 0){
-        minusText.innerHTML = '';
+        plusText.innerHTML = '';
     }
 });
