@@ -23,6 +23,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.news__container{
   padding: 0 3%;
 }
 .news p, .news h3{
@@ -31,7 +33,7 @@ body {
 .news h3{
   margin-top: 15px;
   margin-bottom: 15px;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 1.2rem;
 }
 .news p{
@@ -42,5 +44,5 @@ body {
 .news img{
   margin-top: 3%;
   margin-bottom: 3%;
-  width: 60%;
+  max-width: 60%;
 }
