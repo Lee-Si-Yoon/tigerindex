@@ -16,6 +16,7 @@ body {
   }
 
 .news{
+  margin-top: 5%;
   width: 100%;
   height: auto;
   display: flex;
@@ -27,15 +28,18 @@ body {
   color: #D25BBD;
 }
 .news h3{
-  font-weight: 500;
-  font-size: 1rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 .news p{
   font-weight: 300;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  line-height: 150%;
 }
 .news img{
   margin-top: 2%;
   margin-bottom: 2%;
-  height: 20%;
+  height: 5%;
 }
