@@ -16,13 +16,14 @@ body {
   }
 
 .news{
-  margin-top: 5%;
+  margin-top: 7%;
   width: 100vw;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 3%;
 }
 .news p, .news h3{
   color: #D25BBD;
@@ -30,13 +31,13 @@ body {
 .news h3{
   margin-top: 15px;
   margin-bottom: 15px;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 1.2rem;
 }
 .news p{
   font-weight: 300;
   font-size: 1rem;
-  line-height: 150%;
+  line-height: 130%;
 }
 .news img{
   margin-top: 3%;

@@ -6,7 +6,7 @@ main .constellation__container{
 }
 @media screen and (max-device-width: 999px) {
     #myChart{
-        width: 90%;
+        width: 95%;
         height: 30%;
     }
 }
