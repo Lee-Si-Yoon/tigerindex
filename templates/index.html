@@ -42,7 +42,7 @@
             src="{{url_for('static', filename='icons/status_plus.png')}}"
             alt="status__plus"
           />
-          {% if {{summed}} > 0 %}
+          {% if summed > 0 %}
             <span class="status__profit">+{{summed}}%</span>
           {% else %}
             <span class="status__profit">-{{summed}}%</span>
