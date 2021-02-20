@@ -48,9 +48,12 @@ body {
     line-height: 140%;
   }
   .news span{
+    font-family: 'Courier Prime', monospace;
+    color: #D25BBD;
     font-weight: 300;
-    font-size: 1rem;
+    font-size: .8rem;
     margin-bottom: 8%;
+    text-align: end;
   }
   .news img{
     margin-top: 8%;
@@ -105,9 +108,12 @@ body {
     line-height: 140%;
   }
   .news span{
+    font-family: 'Courier Prime', monospace;
+    color: #D25BBD;
     font-weight: 300;
-    font-size: 1rem;
+    font-size: .8rem;
     margin-bottom: 10%;
+    text-align: end;
   }
   .news img{
     margin-top: 8%;
