@@ -51,6 +51,21 @@ body {
     margin-bottom: 3%;
     width: 100%;
   }
+  footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3%;
+    height: 3%;
+    width: 100%;
+  }
+  footer p{
+    font-family: 'Courier Prime', monospace;
+    color: #D25BBD;
+    font-weight: 500;
+    font-size: 1rem;
+  }
 }
 @media screen and (min-device-width: 1000px) {
   .news{
@@ -87,5 +102,20 @@ body {
     margin-top: 4%;
     margin-bottom: 4%;
     width: 100%;
+  }
+  footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3%;
+    height: 3%;
+    width: 100%;
+  }
+  footer p{
+    font-family: 'Courier Prime', monospace;
+    color: #D25BBD;
+    font-weight: 500;
+    font-size: 1rem;
   }
 }
