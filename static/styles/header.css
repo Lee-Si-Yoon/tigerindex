@@ -11,10 +11,11 @@
         margin-top: 8%;
     }
     header .tiger__index{
+        font-family: 'Courier Prime', monospace;
         margin-top: 3.5%;
         font-size: 1.5rem;
         color: #BC2FC8;
-        font-weight: 500;
+        font-weight: 400;
     }
 }
 @media screen and (min-device-width: 1000px) {
@@ -29,9 +30,10 @@
         margin-top: 2%;
     }
     header .tiger__index{
+        font-family: 'Courier Prime', monospace;
         margin-top: 20px;
         font-size: 2rem;
         color: #BC2FC8;
-        font-weight: 600;
+        font-weight: 500;
     }
 }
