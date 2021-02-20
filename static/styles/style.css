@@ -47,17 +47,9 @@ body {
     font-size: 1rem;
     line-height: 140%;
   }
-  .news span{
-    font-family: 'Courier Prime', monospace;
-    color: #D25BBD;
-    font-weight: 300;
-    font-size: .8rem;
-    margin-bottom: 8%;
-    text-align: end;
-  }
   .news img{
     margin-top: 8%;
-    margin-bottom: .5%;
+    margin-bottom: 8%;
     width: 100%;
   }
   footer{
@@ -107,17 +99,9 @@ body {
     font-size: 1rem;
     line-height: 140%;
   }
-  .news span{
-    font-family: 'Courier Prime', monospace;
-    color: #D25BBD;
-    font-weight: 300;
-    font-size: .8rem;
-    margin-bottom: 10%;
-    text-align: end;
-  }
   .news img{
     margin-top: 8%;
-    margin-bottom: 1%;
+    margin-bottom: 8%;
     width: 100%;
   }
   footer{
