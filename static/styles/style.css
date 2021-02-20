@@ -24,6 +24,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Courier Prime', monospace;
   }
   .news__container{
     width: 97%;
@@ -75,6 +76,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Courier Prime', monospace;
   }
   .news__container{
     width: 50%;
