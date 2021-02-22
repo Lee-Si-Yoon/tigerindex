@@ -1,12 +1,13 @@
 # tigerindex
 
-### 데이터 변경은 note.py에서
+### 데이터 변경
 수기입력 할 수 있는 데이터는 두가지입니다
+
 (지금 접속불가에 매우 가까운 로딩속도를 보이기에... 종목 추가는 권하지 않습니다. 되려 한두개 제외시키신다면 속도 빨라집니다)
 
 1. 환율
 ```
-환율
+# note.py
 def extract_data_kr(r):
     price = r.find('span',{'class':'Trsdu(0.3s) Fw(b) Fz(36px) Mb(-4px) D(ib)'}).get_text()
     price = price.replace(',','')
@@ -16,6 +17,7 @@ def extract_data_kr(r):
 ``` 
 2. 수익률
 ```
+# note.py
 def init():
     datas = get_price()
     kr_datas = get_price_kr()
