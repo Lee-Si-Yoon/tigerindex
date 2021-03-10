@@ -62,7 +62,7 @@ def init():
     datas = get_price()
     kr_datas = get_price_kr()
     datas = datas + kr_datas
-    percentage = 3.4;
+    percentage = 2.4;
     return datas, percentage
 init()
 print("time :", time.time() - start) 
